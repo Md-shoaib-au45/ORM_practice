@@ -1,0 +1,39 @@
+{
+    "baseUrl": "https://localhost:5000",
+    "port": 3000,
+    "env": "development",
+    "email": {
+      "no_reply": {
+        "user": "",
+        "password": ""
+      }
+    },
+    "aws_s3": {
+      "aws_bucket": "",
+      "aws_access_key_id": "",
+      "aws_secret_access_key": "",
+      "aws_region": ""
+    },
+    "jwt_secret": "jwt_secret_key",
+    "enableGoogleLogger": false,
+    "logger": {
+      "project": "",
+      "keyFile": "./logs_config/log-qa.json",
+      "logName": "leximblu-qa"
+    },
+    "server": true,
+    "sms": {
+      "plivo": {
+        "auth_id": "auth_id",
+        "auth_token": "auth_token"
+      },
+      "karix": {
+        "url": ""
+      }
+    },
+    "fcm": {
+      "path": "",
+      "url": ""
+    },
+    "use_encrypted_auth": true
+  }
