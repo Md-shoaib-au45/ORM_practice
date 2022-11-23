@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const User = require('../controller/userContoller');
 const Todo = require('../controller/todoController');
+const Question = require('../controller/questionController');
+const Answered = require('../controller/answeredController');
 
 router.post('/users', User.create);
 router.get('/users', User.getAllUsers);
@@ -15,5 +17,12 @@ router.delete('/todos', Todo.deleteUser);
 
 router.get('/single-todo', Todo.getOneTodo);
 router.get('/single-todo/:id', Todo.getOneTodoUsingParams);
+
+//Questions Routes
+router.post('/questions', Question.create);
+router.get('/questions', Question.getAllQues);
+//Answered Routes
+router.post('/answered', Answered.create);
+router.get('/answered', Answered.getAllAnswered);
 
 module.exports = router;
